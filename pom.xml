@@ -87,4 +87,12 @@
 		</plugins>
 	</build>
 
+	<!-- Partie ajoutée pour la configuration du déploiement vers Nexus -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>firstRepositoryNexus</id> <!-- L'ID doit correspondre à l'ID que vous avez défini dans votre fichier settings.xml -->
+			<url>http://localhost:8081/repository/firstRepositoryNexus/</url> <!-- URL du dépôt snapshot dans Nexus -->
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
